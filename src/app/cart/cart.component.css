@@ -1,0 +1,71 @@
+
+  /* Title Styling */
+  .shop-title {
+    font-family: 'Cinzel', serif; /* Use this font for medieval feel */
+    text-align: center;
+    font-size: 36px;
+    color: #B22222; /* Dark red, resembling blood or fire */
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Cart Items */
+  .cart-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #8B4513; /* Divider between items */
+  }
+  
+  .sword-name {
+    font-size: 18px;
+    color: #000; /* Dark text for sword names */
+  }
+  
+  .sword-price {
+    font-size: 18px;
+    color: #228B22; /* Green to resemble trade or currency */
+  }
+  
+  /* Button Styling */
+  .clear-cart-btn {
+    background-color: #B22222; /* Dark red */
+    color: white;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  .clear-cart-btn:hover {
+    background-color: #8B0000; /* Darker red on hover */
+  }
+  
+  /* Empty Cart Message */
+  .empty-cart {
+    text-align: center;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .empty-cart p {
+    font-style: italic;
+    margin: 20px 0;
+  }
+  .cart-container {
+    background-size: cover;
+    color: white; /* Text color */
+    border: 2px solid #8B4513;
+    padding: 20px;
+    max-width: 600px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    font-family: 'Cinzel', serif;
+  }
+  

@@ -1,0 +1,22 @@
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+
+<div class="cart-container">
+  <h2 class="shop-title">Sword Shop</h2>
+  
+  <div class="cart" *ngIf="cartItems.length > 0">
+    <h3>Your Armory</h3>
+    <ul>
+      <li *ngFor="let item of cartItems">
+        <div class="cart-item">
+          <span class="sword-name">{{ item.name }}</span> 
+          <span class="sword-price">{{ item.price | currency }}</span>
+        </div>
+      </li>
+    </ul>
+    <button class="clear-cart-btn" (click)="clearCart()">Clear Armory</button>
+  </div>
+  
+  <div *ngIf="cartItems.length === 0" class="empty-cart">
+    <p>Your armory is empty. Select your finest swords.</p>
+  </div>
+</div>

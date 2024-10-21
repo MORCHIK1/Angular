@@ -1,0 +1,10 @@
+<div class="shop-container">
+  <h2 class="shop-title">Welcome to the Sword Shop</h2>
+  <div class="sword-list">
+    <div *ngFor="let sword of swords" class="sword-item">
+      <h3>{{ sword.name }}</h3>
+      <p>Price: {{ sword.price | currency }}</p>
+      <button (click)="addToCart(sword)">Add to Cart</button>
+    </div>
+  </div>
+</div>
